@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background:url(img/6.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #form{
+            width: 60%;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: -10px 10px 20px black;
+        }
+        #form>#L,#form>#R{
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #L>img{
+            width:100%;
+            height: auto;
+        }
+        #R>#fild{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        li{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        h2{
+            font-size: 1.3rem;
+            /* color: dimgray; */
+            text-shadow: 5px 5px 5px black;
+        }
+        input{
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 10px;
+            position: relative;
+            transition: 1s;
+        }
+        input:focus{
+            outline: none;
+            background:#ba68c8;
+            color: #fff;
+        }
+        button{
+            width: 300px;
+            height: 40px;
+            background-color: #455a64;
+            border: none;
+            border-radius: 20px;
+            transition: 1s;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:focus{
+            outline: none;
+        }
+        button:hover{
+            background-color: #1f282c;
+        }
+        @media screen and (min-width:0px) and (max-width:1100px) {
+            
+         *{
+             display: none;
+         }
+            h1{
+                display: inline-block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" id="form">
+      <div id="L">
+          <img src="img/v.jpg" alt="">
+      </div>
+      <div id="R">
+          <ul id="fild">
+              <li><h2>Name</h2></li>
+              <li><input type="text" placeholder="For Example:Saeed" maxlength="10" id="Name"></li>
+              <li><h2>Email</h2></li>
+              <li><input type="text" placeholder="For Example:Kaboli" maxlength="20" id="Family"></li>
+              <li><h2>Password</h2></li>
+              <li><input type="password" placeholder="plase useing 8 character" maxlength="10" id="Pass"></li>
+              <li><button href="index.htm">Login in</button></li>
+          </ul>
+      </div>
+      <h1>{Just DeskTop}</h1>
+    </form>
+</body>
+<script src="All.js"></script>
+</html>
